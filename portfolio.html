@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        /* Style for active nav link */
+        .nav-link-active {
+            color: #4f46e5; /* indigo-600 */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo / Name -->
+            <a href="#" class="text-2xl font-bold text-indigo-600">Anshuman Singh</a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8 text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors duration-300">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="px-2 pt-2 pb-4 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-100 hover:text-indigo-600">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-100 hover:text-indigo-600">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-100 hover:text-indigo-600">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-100 hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- About Section -->
+        <section id="about" class="mb-24">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Profile Image -->
+                <div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
+                    <img src="C:\Users\VYAS KUSHWAHA\Downloads\anshu.jpeg" alt="A portrait of Your Name" class="w-full h-full rounded-full object-cover shadow-lg">
+                </div>
+                <!-- Bio -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">Hi, I'm Anshuman Singh</h1>
+                    <p class="text-xl text-indigo-600 font-medium mb-6">A Passionate Front-End Developer & Python Developer</p>
+                    <p class="text-slate-600 leading-relaxed max-w-2xl">
+                        I specialize in creating beautiful, functional, and user-centered digital experiences. With a strong foundation in front-end development and a keen eye for design, I enjoy turning complex problems into simple, elegant solutions. When I'm not coding, you can find me exploring new technologies or enjoying a good cup of coffee.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">My Skills & Expertise</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">HTML5</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">CSS3</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">JavaScript</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Python</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Php</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Cyber Security</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Data Analytics</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Web Development</p>
+                </div>
+                 <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Git & GitHub</p>
+                </div>
+                 <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="font-semibold text-lg">Responsive Design</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-24">
+            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="C:\Users\VYAS KUSHWAHA\Downloads\electricity.jpeg" alt="Screenshot of Project One" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Electricity Usage Calculator</h3>
+                        <p class="text-slate-600 mb-4">You can calculate daily based Power Consumption alongwith cost per unit</p>
+                        <a href="https://github.com/AnshumansinghGkp/Electrictybillcalculator.git">View demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="C:\Users\VYAS KUSHWAHA\Downloads\bill.jpeg" alt="Screenshot of Project Two" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Online Invoice Generator</h3>
+                        <p class="text-slate-600 mb-4">Generate Dynamic Invoive online ,looks modern web app</p>
+                        <a href="https://github.com/AnshumansinghGkp/invoicegenerator.git">View Demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="C:\Users\VYAS KUSHWAHA\Downloads\youtube.jpeg" alt="Screenshot of Project Three" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Youtube Clone</h3>
+                        <p class="text-slate-600 mb-4">Online web application for youtube videos using API </p>
+                        <a href="https://github.com/AnshumansinghGkp/youtubeclone.git">View Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="text-center bg-white p-12 rounded-lg shadow-lg mb-24">
+            <h2 class="text-3xl font-bold mb-4">Interested in my work?</h2>
+            <p class="text-slate-600 mb-8 max-w-xl mx-auto">You can view and download my full resume to see more details about my experience and qualifications.</p>
+            <a href="C:\Users\VYAS KUSHWAHA\Downloads\ANSHUMANSINGHRESUME.pdf">
+                Download Resume (PDF)
+            </a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="text-slate-600 mb-8 max-w-xl mx-auto">I'm currently open to new opportunities. Feel free to reach out if you have a project in mind or just want to connect!</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="mailto:anshu.avni500@gmail.com" class="text-lg font-medium hover:text-indigo-600 transition-colors">anshu.avni500@gmail.com</a>
+                <span class="hidden sm:block text-slate-400">  </span>
+                <p class="text-lg font-medium">+91 8317097220</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-400 mt-20">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p>&copy; 2025 Anshuman Singh. All Rights Reserved.</p>
+            <!-- Optional: Add social links here -->
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle mobile menu
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            const navLinks = mobileMenu.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
